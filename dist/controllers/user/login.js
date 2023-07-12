@@ -38,7 +38,7 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
           path: "/",
           sameSite: "lax",
           maxAge: 1000 * 60 * 60 * 8,
-          domain: "https://investors-grain.vercel.app",
+          domain: "https://investor-grainn.vercel.app/",
         });
         return res.status(200).json({ message: "login success" });
     }
