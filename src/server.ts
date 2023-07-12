@@ -35,7 +35,9 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use('/users', userRoutes)
 app.use('/orders',orderRoutes)
-
+app.get('/', (req: Request, res: Response) => {
+  return res.json({message:"dddd"})
+})
 
 
 
