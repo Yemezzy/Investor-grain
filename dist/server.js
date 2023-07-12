@@ -29,6 +29,9 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 app.use('/users', user_routes_1.default);
 app.use('/orders', order_routes_1.default);
+app.get('/', (req, res) => {
+    return res.json({ message: "dddd" });
+});
 app.all('**', (req, res) => {
     return res.status(404).json({ message: 'Not Found' });
 });

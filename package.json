@@ -2,7 +2,7 @@
   "name": "socbot",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
   "scripts": {
     "start": "concurrently \"npm run dev\" \"cd client && npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
